@@ -1,0 +1,345 @@
+@charset "utf-8";
+
+/* é˜²æ­¢ç”¨æˆ·è‡ªå®šä¹‰èƒŒæ™¯é¢œè‰²å¯¹ç½‘é¡µçš„å½±å“ï¼Œæ·»åŠ è®©ç”¨æˆ·å¯ä»¥è‡ªå®šä¹‰å­—ä½“ */
+html {
+  color: #333;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+}
+
+/* å¦‚æžœä½ çš„é¡¹ç›®ä»…æ”¯æŒ IE9+ | Chrome | Firefox ç­‰ï¼ŒæŽ¨èåœ¨ <html> ä¸­æ·»åŠ  .borderbox è¿™ä¸ª class */
+html.borderbox *, html.borderbox *:before, html.borderbox *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* å†…å¤–è¾¹è·é€šå¸¸è®©å„ä¸ªæµè§ˆå™¨æ ·å¼çš„è¡¨çŽ°ä½ç½®ä¸åŒ */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+/* é‡è®¾ HTML5 æ ‡ç­¾, IE éœ€è¦åœ¨ js ä¸­ createElement(TAG) */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 åª’ä½“æ–‡ä»¶è·Ÿ img ä¿æŒä¸€è‡´ */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* è¦æ³¨æ„è¡¨å•å…ƒç´ å¹¶ä¸ç»§æ‰¿çˆ¶çº§ font çš„é—®é¢˜ */
+body, button, input, select, textarea {
+  font: 300 1em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* åŽ»æŽ‰å„Table cell çš„è¾¹è·å¹¶è®©å…¶è¾¹é‡åˆ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* åŽ»é™¤é»˜è®¤è¾¹æ¡† */
+fieldset, img {
+  border: 0;
+}
+
+/* å—/æ®µè½å¼•ç”¨ */
+blockquote {
+  position: relative;
+  color: #999;
+  font-weight: 400;
+  border-left: 1px solid #1abc9c;
+  padding-left: 1em;
+  margin: 1em 3em 1em 2em;
+}
+
+@media only screen and ( max-width: 640px ) {
+  blockquote {
+    margin: 1em 0;
+  }
+}
+
+/* Firefox ä»¥å¤–ï¼Œå…ƒç´ æ²¡æœ‰ä¸‹åˆ’çº¿ï¼Œéœ€æ·»åŠ  */
+acronym, abbr {
+  border-bottom: 1px dotted;
+  font-variant: normal;
+}
+
+/* æ·»åŠ é¼ æ ‡é—®å·ï¼Œè¿›ä¸€æ­¥ç¡®ä¿åº”ç”¨çš„è¯­ä¹‰æ˜¯æ­£ç¡®çš„ï¼ˆè¦çŸ¥é“ï¼Œäº¤äº’ä»–ä»¬ä¹Ÿæœ‰æ´ç™–ï¼Œå¦‚æžœä½ ä¸åŽ»æŽ‰ï¼Œé‚£å¾—å¤šèŠ±ç‚¹å£èˆŒï¼‰ */
+abbr {
+  cursor: help;
+}
+
+/* ä¸€è‡´çš„ del æ ·å¼ */
+del {
+  text-decoration: line-through;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* åŽ»æŽ‰åˆ—è¡¨å‰çš„æ ‡è¯†, li ä¼šç»§æ‰¿ï¼Œå¤§éƒ¨åˆ†ç½‘ç«™é€šå¸¸ç”¨åˆ—è¡¨æ¥å¾ˆå¤šå†…å®¹ï¼Œæ‰€ä»¥åº”è¯¥å½“åŽ» */
+ul, ol {
+  list-style: none;
+}
+
+/* å¯¹é½æ˜¯æŽ’ç‰ˆæœ€é‡è¦çš„å› ç´ , åˆ«è®©ä»€ä¹ˆéƒ½å±…ä¸­ */
+caption, th {
+  text-align: left;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+/* ç»Ÿä¸€ä¸Šæ ‡å’Œä¸‹æ ‡ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+:root sub, :root sup {
+  vertical-align: baseline; /* for ie9 and other modern browsers */
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* è®©é“¾æŽ¥åœ¨ hover çŠ¶æ€ä¸‹æ˜¾ç¤ºä¸‹åˆ’çº¿ */
+a {
+  color: #1abc9c;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.typo a {
+  border-bottom: 1px solid #1abc9c;
+}
+
+.typo a:hover {
+  border-bottom-color: #555;
+  color: #555;
+  text-decoration: none;
+}
+
+/* é»˜è®¤ä¸æ˜¾ç¤ºä¸‹åˆ’çº¿ï¼Œä¿æŒé¡µé¢ç®€æ´ */
+ins, a {
+  text-decoration: none;
+}
+
+/* ä¸“åå·ï¼šè™½ç„¶ u å·²ç»é‡å›ž html5 Draftï¼Œä½†åœ¨æ‰€æœ‰æµè§ˆå™¨ä¸­éƒ½æ˜¯å¯ä»¥ä½¿ç”¨çš„ï¼Œ
+ * è¦åšåˆ°æ›´å¥½ï¼Œå‘åŽå…¼å®¹çš„è¯ï¼Œæ·»åŠ  class="typo-u" æ¥æ˜¾ç¤ºä¸“åå·
+ * å…³äºŽ <u> æ ‡ç­¾ï¼šhttp://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html#the-u-element
+ * è¢«æ”¾å¼ƒçš„æ˜¯ 4ï¼Œä¹‹å‰ä¸€ç›´æžé”™ http://www.w3.org/TR/html401/appendix/changes.html#idx-deprecated
+ * ä¸€ç¯‡å…³äºŽ <u> æ ‡ç­¾çš„å¾ˆå¥½æ–‡ç« ï¼šhttp://html5doctor.com/u-element/
+ */
+u, .typo-u {
+  text-decoration: underline;
+}
+
+/* æ ‡è®°ï¼Œç±»ä¼¼äºŽæ‰‹å†™çš„è§å…‰ç¬”çš„ä½œç”¨ */
+mark {
+  background: #fffdd1;
+  border-bottom: 1px solid #ffedce;
+  padding: 2px;
+  margin: 0 5px;
+}
+
+/* ä»£ç ç‰‡æ–­ */
+pre, code, pre tt {
+  font-family: Courier, 'Courier New', monospace;
+}
+
+pre {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 1em 1.5em;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ä¸€è‡´åŒ– horizontal rule */
+hr {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  margin-bottom: 0.8em;
+  height: 10px;
+}
+
+/* åº•éƒ¨å°åˆ·ä½“ã€ç‰ˆæœ¬ç­‰æ ‡è®° */
+small, .typo-small,
+  /* å›¾ç‰‡è¯´æ˜Ž */
+figcaption {
+  font-size: 0.9em;
+  color: #888;
+}
+
+strong, b {
+  font-weight: bold;
+  color: #000;
+}
+
+/* å¯æ‹–åŠ¨æ–‡ä»¶æ·»åŠ æ‹–åŠ¨æ‰‹åŠ¿ */
+[draggable] {
+  cursor: move;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/* å¼ºåˆ¶æ–‡æœ¬æ¢è¡Œ */
+.textwrap, .textwrap td, .textwrap th {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.textwrap-table {
+  table-layout: fixed;
+}
+
+/* æä¾› serif ç‰ˆæœ¬çš„å­—ä½“è®¾ç½®: iOS ä¸‹ä¸­æ–‡è‡ªåŠ¨ fallback åˆ° sans-serif */
+.serif {
+  font-family: Palatino, Optima, Georgia, serif;
+}
+
+/* ä¿è¯å—/æ®µè½ä¹‹é—´çš„ç©ºç™½éš”è¡Œ */
+.typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr, .typo table,
+.typo-p, .typo-pre, .typo-ul, .typo-ol, .typo-dl, .typo-form, .typo-hr, .typo-table, blockquote {
+  margin-bottom: 1.2em
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font-weight: 100;
+  color: #000;
+  line-height: 1.35;
+}
+
+/* æ ‡é¢˜åº”è¯¥æ›´è´´ç´§å†…å®¹ï¼Œå¹¶ä¸Žå…¶ä»–å—åŒºåˆ†ï¼Œmargin å€¼è¦ç›¸åº”åšä¼˜åŒ– */
+.typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6,
+.typo-h1, .typo-h2, .typo-h3, .typo-h4, .typo-h5, .typo-h6 {
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  line-height: 1.35;
+}
+
+.typo h1, .typo-h1 {
+  font-size: 2em;
+}
+
+.typo h2, .typo-h2 {
+  font-size: 1.8em;
+}
+
+.typo h3, .typo-h3 {
+  font-size: 1.6em;
+}
+
+.typo h4, .typo-h4 {
+  font-size: 1.4em;
+}
+
+.typo h5, .typo h6, .typo-h5, .typo-h6 {
+  font-size: 1.2em;
+}
+
+/* åœ¨æ–‡ç« ä¸­ï¼Œåº”è¯¥è¿˜åŽŸ ul å’Œ ol çš„æ ·å¼ */
+.typo ul, .typo-ul {
+  margin-left: 1.3em;
+  list-style: disc;
+}
+
+.typo ol, .typo-ol {
+  list-style: decimal;
+  margin-left: 1.9em;
+}
+
+.typo li ul, .typo li ol, .typo-ul ul, .typo-ul ol, .typo-ol ul, .typo-ol ol {
+  margin-bottom: 0.8em;
+  margin-left: 2em;
+}
+
+.typo li ul, .typo-ul ul, .typo-ol ul {
+  list-style: circle;
+}
+
+/* åŒ ul/olï¼Œåœ¨æ–‡ç« ä¸­åº”ç”¨ table åŸºæœ¬æ ¼å¼ */
+.typo table th, .typo table td, .typo-table th, .typo-table td, .typo table caption {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  color: #666;
+}
+
+.typo table th, .typo-table th {
+  background: #fbfbfb;
+}
+
+.typo table thead th, .typo-table thead th {
+  background: #f1f1f1;
+}
+
+.typo table caption {
+  border-bottom: none;
+}
+
+/* åŽ»é™¤ webkit ä¸­ input å’Œ textarea çš„é»˜è®¤æ ·å¼  */
+.typo-input, .typo-textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.typo-em, .typo em, legend, caption {
+  color: #000;
+  font-weight: inherit;
+}
+
+/* ç€é‡å·ï¼Œåªèƒ½åœ¨å°‘é‡ï¼ˆå°‘äºŽ100ä¸ªå­—ç¬¦ï¼‰ä¸”å…¨æ˜¯å…¨è§’å­—ç¬¦çš„æƒ…å†µä¸‹ä½¿ç”¨ */
+.typo-em {
+  position: relative;
+}
+
+.typo-em:after {
+  position: absolute;
+  top: 0.65em;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  content: "ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»ãƒ»";
+}
+
+/* Responsive images */
+.typo img {
+  max-width: 100%;
+}
